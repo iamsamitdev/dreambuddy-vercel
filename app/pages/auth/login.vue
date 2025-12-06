@@ -53,7 +53,7 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
       color: 'success' 
     })
     
-    await navigateTo($localePath('/'))
+    await navigateTo($localePath('/goals'))
   } catch (error: any) {
     toast.add({ 
       title: String($t('auth.login.errorTitle') || 'Error'), 
